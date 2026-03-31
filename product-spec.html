@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Precision Architect | Technical Specifications - Model PA-X1000</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#5d1900",
+              "surface-container-highest": "#353534",
+              "secondary-container": "#334d58",
+              "on-tertiary-fixed-variant": "#832600",
+              "on-error-container": "#ffdad6",
+              "tertiary": "#ffb59d",
+              "surface-container-lowest": "#0e0e0e",
+              "error-container": "#93000a",
+              "on-primary-container": "#f8f7ff",
+              "inverse-surface": "#e5e2e1",
+              "outline": "#8c90a1",
+              "surface-container": "#201f1f",
+              "surface-container-high": "#2a2a2a",
+              "error": "#ffb4ab",
+              "on-secondary": "#19343e",
+              "secondary-fixed-dim": "#afcbd8",
+              "on-background": "#e5e2e1",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#ffdbd0",
+              "on-secondary-container": "#a1bdca",
+              "on-tertiary-fixed": "#390c00",
+              "secondary": "#afcbd8",
+              "tertiary-fixed-dim": "#ffb59d",
+              "primary-fixed": "#dae1ff",
+              "surface-bright": "#393939",
+              "on-primary-fixed": "#001849",
+              "inverse-primary": "#0054d6",
+              "primary-container": "#0066ff",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-container": "#fff6f4",
+              "primary-fixed-dim": "#b3c5ff",
+              "on-surface-variant": "#c2c6d8",
+              "on-surface": "#e5e2e1",
+              "background": "#131313",
+              "primary": "#b3c5ff",
+              "secondary-fixed": "#cbe7f5",
+              "on-secondary-fixed": "#021f29",
+              "on-primary": "#002b75",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#003fa4",
+              "surface-tint": "#b3c5ff",
+              "on-secondary-fixed-variant": "#304a55",
+              "tertiary-container": "#cc4204",
+              "surface-variant": "#353534",
+              "outline-variant": "#424656",
+              "surface": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .technical-grid {
+            background-image: radial-gradient(circle, #424656 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-xl border-b border-white/5 shadow-[0_8px_32px_rgba(0,102,255,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#b3c5ff] font-headline">PRECISION ARCHITECT</div>
+<div class="hidden md:flex items-center space-x-8 font-headline tracking-tight font-medium">
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">Products</a>
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">Solutions</a>
+<a class="text-[#b3c5ff] border-b-2 border-[#0066ff] pb-1" href="#">Technical Specs</a>
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-5 py-2 text-sm font-medium text-primary hover:bg-white/5 transition-all duration-300 active:scale-95">Contact</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg text-sm font-bold active:scale-95 transition-transform shadow-lg shadow-primary-container/20">Get Quote</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 relative">
+<!-- Background Grid Effect -->
+<div class="absolute inset-0 technical-grid pointer-events-none"></div>
+<section class="max-w-screen-2xl mx-auto px-8">
+<!-- Breadcrumbs & Model Title -->
+<div class="mb-12">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 block">Series X-1000 / Control Systems</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface max-w-4xl">
+                    Industrial Control Panel <br/>
+<span class="text-primary-container">Model PA-X1000</span>
+</h1>
+</div>
+<!-- Hero: Technical Drawing/Render Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
+<div class="lg:col-span-8 relative aspect-video bg-surface-container-low rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" data-alt="High-resolution technical 3D render of an industrial control panel with complex wiring, switches, and digital displays in a dark studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmXw7nHhDgXqJaTatGjZQseIeT4cld8QvJZYFJOnimMIFZFzd0-DiKQFQI8xiljbCvvdAU_uMMvsr9TnqXRl7x-sJ1PAP2_Sev2SBpPNpowsOlFPMLYT6nvSpTbTek0_kfybNYtnE_vSfrk2zTsabKZZUgTXNLOzNOxdGpx1b-MkeIZHAx9fTn-le4avolSZoXgYQbmyepJvPGDEZyi8MhdrLmGyC4u2uJWh940qMYz3xiuo9qYNfaXkfo_XzZ8c83s_e_eNNs6YM"/>
+<!-- Schematic Overlay Tags -->
+<div class="absolute top-8 left-8 flex flex-col gap-4">
+<div class="bg-surface-container-highest/80 backdrop-blur-md p-3 rounded-lg border border-outline-variant/20">
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-1">Status Blueprint</p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#b3c5ff]"></span>
+<span class="text-xs font-mono">ACTIVE_SYSTEM_READY</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fast Specs Column -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<div class="p-8 bg-surface-container rounded-xl border border-outline-variant/10">
+<h3 class="font-headline text-xl font-bold mb-6 text-on-surface">System Overview</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<span class="font-label text-xs text-slate-400 uppercase tracking-wider">Form Factor</span>
+<span class="font-headline font-medium text-on-surface">Modular Floor Mount</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<span class="font-label text-xs text-slate-400 uppercase tracking-wider">Input Voltage</span>
+<span class="font-headline font-medium text-on-surface">480V 3-Phase</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<span class="font-label text-xs text-slate-400 uppercase tracking-wider">Response Time</span>
+<span class="font-headline font-medium text-on-surface">&lt; 15ms</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+<span class="font-label text-xs text-slate-400 uppercase tracking-wider">Revision</span>
+<span class="font-headline font-medium text-on-surface">V4.02.24</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="w-full bg-primary-container hover:bg-primary-container/90 text-on-primary-container py-4 rounded-lg font-headline font-bold flex items-center justify-center gap-3 transition-all active:scale-95">
+<span class="material-symbols-outlined">request_quote</span>
+                            Request Quote for this Model
+                        </button>
+<button class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary py-4 rounded-lg font-headline font-medium flex items-center justify-center gap-3 transition-all active:scale-95">
+<span class="material-symbols-outlined">download</span>
+                            Download Datasheet (PDF)
+                        </button>
+</div>
+</div>
+</div>
+<!-- Technical Specifications Tables -->
+<div class="space-y-24">
+<!-- Electrical Specs -->
+<div>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-3xl font-bold tracking-tight">Electrical Characteristics</h2>
+<div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 border border-outline-variant/20 rounded-xl overflow-hidden">
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Nominal Input Voltage</span>
+<span class="font-body font-medium">480 VAC, 50/60 Hz</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Control Circuit Voltage</span>
+<span class="font-body font-medium">24 VDC</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">SCCR Rating</span>
+<span class="font-body font-medium">65 kA @ 480V</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Current Rating</span>
+<span class="font-body font-medium">100A (Standard Configuration)</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Power Factor</span>
+<span class="font-body font-medium">0.96 (at full load)</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">I/O Capacity</span>
+<span class="font-body font-medium">32 Digital In / 16 Relay Out</span>
+</div>
+</div>
+</div>
+<!-- Mechanical & Enclosure -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-3xl font-bold tracking-tight">Mechanical Dimensions</h2>
+<div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+</div>
+<div class="space-y-4">
+<div class="p-6 bg-surface-container-low border-l-4 border-primary rounded-r-xl">
+<div class="grid grid-cols-3 gap-8">
+<div>
+<p class="font-label text-[10px] text-slate-400 uppercase mb-1">Height</p>
+<p class="font-headline text-xl font-bold">1800 mm</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-slate-400 uppercase mb-1">Width</p>
+<p class="font-headline text-xl font-bold">800 mm</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-slate-400 uppercase mb-1">Depth</p>
+<p class="font-headline text-xl font-bold">500 mm</p>
+</div>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low border-l-4 border-outline-variant rounded-r-xl">
+<p class="font-label text-[10px] text-slate-400 uppercase mb-1">Total Unit Weight</p>
+<p class="font-headline text-xl font-bold">145 kg (Empty) / 210 kg (Max Load)</p>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="font-headline text-3xl font-bold tracking-tight">Enclosure &amp; Protection</h2>
+<div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 gap-px bg-outline-variant/20 border border-outline-variant/20 rounded-xl overflow-hidden">
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Material</span>
+<span class="font-body font-medium">14-Gauge Cold Rolled Steel</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Rating</span>
+<span class="font-body font-medium">NEMA 4X / IP66</span>
+</div>
+<div class="bg-surface-container-low p-6 flex justify-between">
+<span class="font-label text-sm text-slate-400">Temperature Range</span>
+<span class="font-body font-medium">-20°C to +55°C</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Compliance & Certifications -->
+<div class="bg-surface-container-low p-12 rounded-2xl border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">verified</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl font-bold mb-12">Compliance &amp; Global Standards</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="font-bold font-headline text-sm">UL</span>
+</div>
+<p class="text-xs font-label text-slate-400">UL 508A Certified</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="font-bold font-headline text-sm">CE</span>
+</div>
+<p class="text-xs font-label text-slate-400">EN 61439-1 Compliance</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="font-bold font-headline text-sm">ISO</span>
+</div>
+<p class="text-xs font-label text-slate-400">9001:2015 Manufacturing</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="font-bold font-headline text-sm">ROHS</span>
+</div>
+<p class="text-xs font-label text-slate-400">Lead-Free Assembly</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="font-bold font-headline text-sm">CSA</span>
+</div>
+<p class="text-xs font-label text-slate-400">C22.2 No. 14</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-white/5 py-12 px-8">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 font-['Inter'] text-sm antialiased">
+<div class="space-y-4">
+<div class="text-lg font-black tracking-tighter text-white">PRECISION ARCHITECT</div>
+<p class="text-slate-500 leading-relaxed max-w-xs">
+                    Engineering excellence through modular industrial design and precise automation controls.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Documentation</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Technical Manuals</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Safety Protocols</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">API References</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Support Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Certifications</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">ISO 9001</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">UL 508A</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">CE Marking</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Quality Assurance</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Contact</h4>
+<div class="space-y-2 text-slate-500">
+<p>Global Industrial Hub</p>
+<p>San Francisco, CA 94105</p>
+<p class="pt-4 text-[#b3c5ff]">support@precisionarchitect.com</p>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500">© 2024 Precision Architect Industrial. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
