@@ -1,1240 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLC Control Panels | Skill Tech Control Systems | Industrial Automation</title>
-    <meta name="description" content="Skill Tech Control Systems designs and manufactures next-generation PLC control panels engineered for precision, reliability, and performance. Custom industrial automation solutions.">
-    <meta name="keywords" content="PLC control panels, industrial automation, SCADA systems, HMI panels, control panel manufacturer, industrial control systems, Skill Tech Control Systems, automation solutions">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Skill Tech Control Systems">
-    <link rel="canonical" href="https://skilltechcontrolsystems.com/">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://skilltechcontrolsystems.com/">
-    <meta property="og:title" content="PLC Control Panels | Skill Tech Control Systems">
-    <meta property="og:description" content="Skill Tech Control Systems manufactures custom PLC control panels for industrial automation. 500+ projects delivered with 98% uptime rate.">
-    <meta property="og:site_name" content="Skill Tech Control Systems">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PLC Control Panels | Skill Tech Control Systems">
-    <meta name="twitter:description" content="Custom PLC control panels for industrial automation. Engineered for precision, built for reliability.">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Skill Tech Control Systems",
-      "url": "https://skilltechcontrolsystems.com",
-      "description": "Skill Tech Control Systems is a manufacturer of custom PLC control panels and industrial automation solutions based in Chengalpattu, Tamilnadu, India.",
-      "foundingDate": "2004",
-      "telephone": "+919789544908",
-      "email": "skilltechcontrolsystems@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Flat No.44, First Floor, Lakshmi Ganapathy Nagar, Gangai Amman Kovil Street, Urappakkam",
-        "addressLocality": "Chengalpattu",
-        "addressRegion": "Tamilnadu",
-        "postalCode": "603202",
-        "addressCountry": "IN"
-      },
-      "knowsAbout": ["PLC Control Panels", "Industrial Automation", "SCADA Systems", "HMI Integration", "IoT Smart Panels"],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Control Panel Products",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Basic PLC Panels" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Advanced Control Systems" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Industrial Control Centers" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "IoT Smart Panels" } }
-        ]
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#5d1900",
+              "surface-container-highest": "#353534",
+              "secondary-container": "#334d58",
+              "on-tertiary-fixed-variant": "#832600",
+              "on-error-container": "#ffdad6",
+              "tertiary": "#ffb59d",
+              "surface-container-lowest": "#0e0e0e",
+              "error-container": "#93000a",
+              "on-primary-container": "#f8f7ff",
+              "inverse-surface": "#e5e2e1",
+              "outline": "#8c90a1",
+              "surface-container": "#201f1f",
+              "surface-container-high": "#2a2a2a",
+              "error": "#ffb4ab",
+              "on-secondary": "#19343e",
+              "secondary-fixed-dim": "#afcbd8",
+              "on-background": "#e5e2e1",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#ffdbd0",
+              "on-secondary-container": "#a1bdca",
+              "on-tertiary-fixed": "#390c00",
+              "secondary": "#afcbd8",
+              "tertiary-fixed-dim": "#ffb59d",
+              "primary-fixed": "#dae1ff",
+              "surface-bright": "#393939",
+              "on-primary-fixed": "#001849",
+              "inverse-primary": "#0054d6",
+              "primary-container": "#0066ff",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-container": "#fff6f4",
+              "primary-fixed-dim": "#b3c5ff",
+              "on-surface-variant": "#c2c6d8",
+              "on-surface": "#e5e2e1",
+              "background": "#131313",
+              "primary": "#b3c5ff",
+              "secondary-fixed": "#cbe7f5",
+              "on-secondary-fixed": "#021f29",
+              "on-primary": "#002b75",
+              "inverse-on-surface": "#313030",
+              "on-primary-fixed-variant": "#003fa4",
+              "surface-tint": "#b3c5ff",
+              "on-secondary-fixed-variant": "#304a55",
+              "tertiary-container": "#cc4204",
+              "surface-variant": "#353534",
+              "outline-variant": "#424656",
+              "surface": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
       }
-    }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-  /* =============================================
-     SPATRIX-INSPIRED DESIGN — Skill Tech Control Systems
-     Dark navy + orange palette, clean modern layout
-     ============================================= */
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-  :root {
-    --primary: #FF6B35;
-    --primary-glow: rgba(255,107,53,0.25);
-    --primary-subtle: rgba(255,107,53,0.1);
-    --dark: #080D1A;
-    --dark-2: #0D1425;
-    --dark-3: #111827;
-    --card-bg: rgba(255,255,255,0.04);
-    --card-border: rgba(255,255,255,0.08);
-    --card-hover: rgba(255,107,53,0.08);
-    --text-primary: #FFFFFF;
-    --text-secondary: rgba(255,255,255,0.6);
-    --text-muted: rgba(255,255,255,0.35);
-    --success: #00D9A5;
-    --radius: 16px;
-    --radius-sm: 10px;
-    --radius-xs: 8px;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--dark);
-    color: var(--text-primary);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  /* ---- GRID BACKGROUND ---- */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(255,107,53,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,107,53,0.03) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  /* ---- NAVBAR ---- */
-  .navbar {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 40px; height: 64px;
-    background: rgba(8,13,26,0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--card-border);
-    transition: all 0.3s ease;
-  }
-  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .nav-brand .brand-icon {
-    width: 34px; height: 34px; border-radius: 8px;
-    background: var(--primary-subtle);
-    border: 1px solid rgba(255,107,53,0.3);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px;
-  }
-  .nav-brand .brand-name {
-    font-size: 15px; font-weight: 700; color: var(--text-primary);
-    letter-spacing: -0.3px;
-  }
-  .nav-links { display: flex; align-items: center; gap: 8px; list-style: none; }
-  .nav-links a {
-    color: var(--text-secondary); text-decoration: none;
-    font-size: 14px; font-weight: 500;
-    padding: 8px 14px; border-radius: 8px;
-    transition: all 0.2s;
-  }
-  .nav-links a:hover { color: var(--text-primary); background: var(--card-bg); }
-  .nav-cta {
-    background: var(--primary); color: #fff !important;
-    border-radius: 8px !important; padding: 8px 18px !important;
-    font-weight: 600 !important; font-size: 14px !important;
-  }
-  .nav-cta:hover { background: #e55a25 !important; transform: translateY(-1px); }
-  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text-primary); font-size: 20px; }
-
-  /* ---- HERO ---- */
-  .hero {
-    position: relative; z-index: 1;
-    min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center;
-    padding: 120px 24px 80px;
-    overflow: hidden;
-  }
-  .hero::after {
-    content: '';
-    position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
-    width: 800px; height: 800px;
-    background: radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-inner { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; }
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.25);
-    color: var(--primary); font-size: 12px; font-weight: 600;
-    letter-spacing: 0.5px; text-transform: uppercase;
-    padding: 7px 16px; border-radius: 100px; margin-bottom: 28px;
-  }
-  .hero h1 {
-    font-size: clamp(42px, 7vw, 80px);
-    font-weight: 900; line-height: 1.05; letter-spacing: -2px;
-    color: var(--text-primary); margin-bottom: 24px;
-  }
-  .hero h1 span { color: var(--primary); }
-  .hero-subtitle {
-    font-size: clamp(16px, 2vw, 20px); color: var(--text-secondary);
-    max-width: 580px; margin: 0 auto 40px; line-height: 1.7;
-    font-weight: 400;
-  }
-  .hero-stats {
-    display: flex; justify-content: center; gap: 48px;
-    margin: 40px 0 48px; flex-wrap: wrap;
-  }
-  .stat-item { text-align: center; }
-  .stat-number { font-size: 36px; font-weight: 800; color: var(--primary); letter-spacing: -1px; display: block; }
-  .stat-label { font-size: 13px; color: var(--text-secondary); margin-top: 4px; font-weight: 500; }
-  .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 14px 28px; border-radius: 10px;
-    font-size: 15px; font-weight: 600; text-decoration: none;
-    cursor: pointer; border: none; transition: all 0.2s ease;
-    letter-spacing: -0.2px;
-  }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-primary:hover { background: #e55a25; transform: translateY(-2px); box-shadow: 0 8px 24px var(--primary-glow); }
-  .btn-secondary {
-    background: var(--card-bg); color: var(--text-primary);
-    border: 1px solid var(--card-border);
-  }
-  .btn-secondary:hover { background: rgba(255,255,255,0.08); transform: translateY(-2px); }
-
-  /* ---- SECTION LAYOUT ---- */
-  section { position: relative; z-index: 1; padding: 100px 24px; }
-  .container { max-width: 1200px; margin: 0 auto; }
-  .section-pill {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--card-bg); border: 1px solid var(--card-border);
-    color: var(--text-secondary); font-size: 11px; font-weight: 700;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    padding: 6px 14px; border-radius: 100px; margin-bottom: 20px;
-  }
-  .section-title {
-    font-size: clamp(32px, 5vw, 56px); font-weight: 800;
-    letter-spacing: -1.5px; line-height: 1.1;
-    color: var(--text-primary); margin-bottom: 16px;
-  }
-  .section-title span { color: var(--primary); }
-  .section-subtitle {
-    font-size: 17px; color: var(--text-secondary);
-    max-width: 560px; line-height: 1.7; font-weight: 400;
-  }
-  .section-header { text-align: center; margin-bottom: 64px; }
-  .section-header .section-subtitle { margin: 0 auto; }
-
-  /* ---- FEATURES (WHY CHOOSE US) ---- */
-  #features { background: var(--dark-2); }
-  .features-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
-  }
-  .feature-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    padding: 32px 28px;
-    transition: all 0.3s ease;
-    position: relative; overflow: hidden;
-  }
-  .feature-card::before {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(135deg, var(--primary-subtle), transparent);
-    opacity: 0; transition: opacity 0.3s;
-  }
-  .feature-card:hover { border-color: rgba(255,107,53,0.3); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-  .feature-card:hover::before { opacity: 1; }
-  .feature-icon {
-    width: 48px; height: 48px; border-radius: var(--radius-xs);
-    background: var(--primary-subtle); border: 1px solid rgba(255,107,53,0.2);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px; margin-bottom: 20px;
-  }
-  .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--text-primary); }
-  .feature-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
-
-  /* ---- PRODUCTS ---- */
-  #products { background: var(--dark); }
-  .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .product-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    overflow: hidden; transition: all 0.3s ease;
-  }
-  .product-card:hover { border-color: rgba(255,107,53,0.3); transform: translateY(-4px); box-shadow: 0 24px 48px rgba(0,0,0,0.3); }
-  .product-card-header {
-    padding: 28px 28px 20px;
-    background: linear-gradient(135deg, rgba(255,107,53,0.12), rgba(255,107,53,0.04));
-    border-bottom: 1px solid var(--card-border);
-    display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-  }
-  .product-tag {
-    font-size: 11px; font-weight: 700; letter-spacing: 0.8px;
-    text-transform: uppercase; padding: 5px 12px; border-radius: 100px;
-    background: var(--primary); color: #fff;
-  }
-  .product-emoji { font-size: 40px; }
-  .product-card-body { padding: 24px 28px 28px; }
-  .product-card-body h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.5px; }
-  .product-card-body p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; }
-  .product-features { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .product-features li {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 14px; color: var(--text-secondary);
-  }
-  .product-features li::before {
-    content: ''; width: 6px; height: 6px; border-radius: 50%;
-    background: var(--success); flex-shrink: 0;
-  }
-
-  /* ---- PROCESS (HOW WE WORK) ---- */
-  #process { background: var(--dark-2); }
-  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  @media (max-width: 768px) { .process-grid { grid-template-columns: 1fr; } }
-  .step-card {
-    background: var(--card-bg); border: 1px solid var(--card-border);
-    border-radius: var(--radius); padding: 32px 28px;
-    transition: all 0.3s;
-  }
-  .step-card:hover { border-color: rgba(255,107,53,0.3); transform: translateY(-4px); }
-  .step-number {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: var(--primary); color: #fff;
-    font-size: 16px; font-weight: 800;
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 20px;
-  }
-  .step-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-  .step-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
-
-  /* ---- INDUSTRIES ---- */
-  #industries { background: var(--dark); }
-  .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .industry-card {
-    background: var(--card-bg); border: 1px solid var(--card-border);
-    border-radius: var(--radius); padding: 28px 20px;
-    text-align: center; transition: all 0.3s ease;
-    cursor: default;
-  }
-  .industry-card:hover { border-color: rgba(255,107,53,0.3); background: var(--card-hover); transform: translateY(-4px); }
-  .industry-icon { font-size: 36px; margin-bottom: 16px; display: block; }
-  .industry-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
-  .industry-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
-
-  /* ---- CTA BANNER ---- */
-  #cta-section {
-    background: linear-gradient(135deg, rgba(255,107,53,0.15) 0%, rgba(255,107,53,0.05) 50%, transparent 100%);
-    border-top: 1px solid var(--card-border);
-    border-bottom: 1px solid var(--card-border);
-    text-align: center;
-  }
-  #cta-section h2 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; }
-  #cta-section p { font-size: 17px; color: var(--text-secondary); margin-bottom: 36px; }
-  .cta-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-
-  /* ---- CONTACT ---- */
-  #contact { background: var(--dark-2); }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-  .contact-form-wrap { display: flex; flex-direction: column; gap: 0; }
-  .form-group { margin-bottom: 16px; }
-  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; letter-spacing: 0.3px; }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%; padding: 13px 16px;
-    background: var(--card-bg); border: 1px solid var(--card-border);
-    border-radius: var(--radius-xs); color: var(--text-primary);
-    font-size: 14px; font-family: inherit;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    outline: none; -webkit-appearance: none;
-  }
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    border-color: rgba(255,107,53,0.5);
-    box-shadow: 0 0 0 3px rgba(255,107,53,0.1);
-  }
-  .form-group select { cursor: pointer; }
-  .form-group select option { background: var(--dark-3); }
-  .form-group textarea { resize: vertical; min-height: 120px; }
-  .btn-submit {
-    width: 100%; background: var(--primary); color: #fff;
-    border: none; border-radius: var(--radius-xs);
-    padding: 15px 28px; font-size: 15px; font-weight: 700;
-    cursor: pointer; transition: all 0.2s; font-family: inherit;
-    letter-spacing: -0.2px;
-  }
-  .btn-submit:hover { background: #e55a25; transform: translateY(-2px); box-shadow: 0 8px 24px var(--primary-glow); }
-  .contact-info { display: flex; flex-direction: column; gap: 20px; }
-  .contact-card {
-    background: var(--card-bg); border: 1px solid var(--card-border);
-    border-radius: var(--radius); padding: 24px;
-    transition: border-color 0.2s;
-  }
-  .contact-card:hover { border-color: rgba(255,107,53,0.2); }
-  .contact-card-icon { font-size: 24px; margin-bottom: 12px; display: block; }
-  .contact-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
-  .contact-card p, .contact-card a { font-size: 14px; color: var(--text-secondary); line-height: 1.7; text-decoration: none; display: block; }
-  .contact-card a:hover { color: var(--primary); }
-
-  /* ---- FOOTER ---- */
-  footer {
-    background: var(--dark); border-top: 1px solid var(--card-border);
-    padding: 60px 24px 32px; position: relative; z-index: 1;
-  }
-  .footer-inner { max-width: 1200px; margin: 0 auto; }
-  .footer-grid {
-    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 48px; margin-bottom: 48px;
-  }
-  .footer-brand .brand-name { font-size: 18px; font-weight: 800; color: var(--primary); margin-bottom: 12px; display: block; }
-  .footer-brand p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; max-width: 260px; }
-  .footer-col h4 { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
-  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .footer-col a { font-size: 14px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
-  .footer-col a:hover { color: var(--primary); }
-  .footer-bottom {
-    display: flex; justify-content: space-between; align-items: center;
-    padding-top: 24px; border-top: 1px solid var(--card-border);
-    flex-wrap: wrap; gap: 12px;
-  }
-  .footer-bottom p { font-size: 13px; color: var(--text-muted); }
-  .footer-bottom a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
-  .footer-bottom a:hover { color: var(--primary); }
-
-  /* ---- ANIMATIONS ---- */
-  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
-  .fade-in:nth-child(2) { transition-delay: 0.1s; }
-  .fade-in:nth-child(3) { transition-delay: 0.2s; }
-  .fade-in:nth-child(4) { transition-delay: 0.3s; }
-
-  /* ---- MOBILE RESPONSIVE ---- */
-  @media (max-width: 1024px) {
-    .features-grid { grid-template-columns: repeat(2, 1fr); }
-    .industries-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-  }
-  @media (max-width: 768px) {
-    .navbar { padding: 0 20px; }
-    .nav-links { display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: var(--dark); flex-direction: column; align-items: flex-start; padding: 24px; gap: 4px; overflow-y: auto; }
-    .nav-links.open { display: flex; }
-    .nav-links a { font-size: 18px; padding: 14px 16px; width: 100%; border-radius: 10px; }
-    .nav-toggle { display: block; }
-    section { padding: 72px 20px; }
-    .hero { padding: 100px 20px 64px; }
-    .hero h1 { letter-spacing: -1px; }
-    .hero-stats { gap: 28px; }
-    .stat-number { font-size: 28px; }
-    .features-grid { grid-template-columns: 1fr; gap: 16px; }
-    .products-grid { grid-template-columns: 1fr; }
-    .process-grid { grid-template-columns: 1fr; }
-    .industries-grid { grid-template-columns: repeat(2, 1fr); }
-    .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-    .footer-bottom { flex-direction: column; text-align: center; }
-    .cta-actions { flex-direction: column; align-items: center; }
-  }
-  @media (max-width: 480px) {
-    .hero-badge { font-size: 11px; }
-    .industries-grid { grid-template-columns: 1fr; }
-    .hero-actions { flex-direction: column; align-items: center; }
-    .hero-actions .btn { width: 100%; max-width: 300px; justify-content: center; }
-  }
-</style>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-grid-pattern {
+        background-image: radial-gradient(circle, #424656 1px, transparent 1px);
+        background-size: 32px 32px;
+        opacity: 0.05;
+      }
+      .glass-card {
+        background: rgba(42, 42, 42, 0.7);
+        backdrop-filter: blur(20px);
+      }
+    </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-brand">
-            <div class="brand-icon">⚡</div>
-            <span class="brand-name">Skill Tech Control Systems</span>
-        </a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#industries">Industries</a></li>
-            <li><a href="#contact" class="nav-cta">Get Quote</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-inner">
-            <div class="hero-badge">⚡ Industrial Automation Solutions</div>
-            <h1>Next-Gen<br><span>PLC Control</span><br>Panels</h1>
-            <p class="hero-subtitle">Engineered for precision. Built for reliability. Designed for the future of industrial automation.</p>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <div class="stat-label">Uptime Rate</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <div class="stat-label">Support</div>
-                </div>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar from JSON -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-xl border-b border-white/5 shadow-[0_8px_32px_rgba(0,102,255,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#b3c5ff] font-['Space_Grotesk']">
+                PRECISION ARCHITECT
             </div>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                <a href="tel:+919789544908" class="btn btn-secondary">Call Us Now</a>
-            </div>
+<div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] tracking-tight font-medium">
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">Products</a>
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">Solutions</a>
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">Technical Specs</a>
+<a class="text-slate-400 hover:text-[#b3c5ff] transition-colors" href="#">About</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="px-5 py-2 text-slate-400 hover:text-[#b3c5ff] transition-colors font-medium">Contact</button>
+<button class="px-6 py-2 bg-primary-container text-on-primary-container font-bold rounded-md active:scale-95 transition-transform">Get Quote</button>
+</div>
+</div>
+</nav>
+<main class="relative pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-grid-pattern z-0"></div>
+<div class="max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-label uppercase tracking-widest text-primary">System Operational</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-[0.9] tracking-tighter text-on-surface">
+                        Precision Control <br/>
+<span class="text-primary">for Industrial</span> <br/>
+                        Excellence
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Engineered solutions for complex automation. We design and build high-performance control panels that define the future of industrial infrastructure.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 bg-primary-container text-on-primary-container font-bold rounded-md shadow-[0_0_20px_rgba(0,102,255,0.3)] hover:brightness-110 transition-all">
+                            Get Quote
+                        </button>
+<button class="px-8 py-4 bg-surface-container-high text-primary font-bold rounded-md border border-outline-variant/10 hover:bg-surface-container-highest transition-all">
+                            Explore Specs
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-xl overflow-hidden shadow-2xl border border-outline-variant/20 transform lg:rotate-3">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a high-tech industrial control panel with glowing LED indicators, organized wiring, and complex electronic components in a dark workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx9X0TzVtIAkN-79KUHqve0rnmZl3qYEr_i4wCKJPYnVC1s3MT5Dn9NyZdgr2W5l6Y0jkwvf285sGVKIhKzIZVYR1NJ-pcYvQfFrfW-MVYstyiva-BQeQ3G5NKDEmSdmdpX4vXfESlmABUD2tktOi-O9wMG7iyXuuqWKTudibYjqpwCl9x1RH7vmum0u9EtERa3NSEbZuXAa9YZtK8yeRUDmqmC3mE53zfPY3xO1XOFAdlFMYoLzC-n5MclxY5Pi9LxVvxJWDyI58"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+</div>
+<!-- Technical Meta Data Decoration -->
+<div class="absolute -bottom-6 -left-6 glass-card p-6 border border-outline-variant/20 rounded-lg hidden md:block">
+<div class="text-[10px] font-label text-slate-500 uppercase tracking-[0.2em] mb-2">Model SPEC. PA-092</div>
+<div class="flex items-center gap-4">
+<div class="space-y-1">
+<div class="text-2xl font-headline font-bold text-primary">99.9%</div>
+<div class="text-[10px] font-label text-slate-400">UPTIME RATING</div>
+</div>
+<div class="w-px h-10 bg-outline-variant/30"></div>
+<div class="space-y-1">
+<div class="text-2xl font-headline font-bold text-tertiary">ISO</div>
+<div class="text-[10px] font-label text-slate-400">CERTIFIED</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-bold tracking-tight">Engineered for Reliability</h2>
+<p class="text-on-surface-variant max-w-xl">Our panels are built with components from industry leaders and tested under extreme conditions to ensure zero-fail performance.</p>
+</div>
+<div class="text-right hidden md:block">
+<span class="text-[10px] font-label text-outline tracking-[0.3em] uppercase">Core Values / 01</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Quality -->
+<div class="p-10 bg-surface-container-high rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Unyielding Quality</h3>
+<p class="text-on-surface-variant leading-relaxed">Each panel undergoes a rigorous 48-hour stress test before shipment, ensuring every circuit exceeds industry standards.</p>
+</div>
+<!-- Safety -->
+<div class="p-10 bg-surface-container-high rounded-xl border border-outline-variant/10 hover:border-tertiary/30 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-tertiary/10 text-tertiary mb-8 group-hover:bg-tertiary group-hover:text-on-tertiary transition-all">
+<span class="material-symbols-outlined text-3xl">security</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Safety-First Design</h3>
+<p class="text-on-surface-variant leading-relaxed">Integrated failsafes and physical barriers designed to protect operators and high-value machinery from electrical surges.</p>
+</div>
+<!-- Innovation -->
+<div class="p-10 bg-surface-container-high rounded-xl border border-outline-variant/10 hover:border-primary/30 transition-all group">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Smart Innovation</h3>
+<p class="text-on-surface-variant leading-relaxed">IoT-ready panels featuring remote diagnostics and real-time power analytics to optimize your industrial workflow.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Expertise - Visual Grid -->
+<section class="py-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="mb-20 text-center space-y-4">
+<span class="text-xs font-label text-primary tracking-[0.4em] uppercase">Industry Expertise</span>
+<h2 class="text-5xl md:text-6xl font-headline font-bold tracking-tighter">Precision in Every Sector</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Oil & Gas -->
+<div class="relative group h-[500px] overflow-hidden rounded-xl">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dramatic wide angle of an offshore oil rig at twilight with bright industrial lights and dark ocean waves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3GVvmJ-Fjydf3Ccj9bNvmSNzLW6oeBhzQ_uXj_PHtqk_l7S336D-mMQPQCokiVtxpmxbqkc680odS4N2kvslRPCx9e4ID4EeSNbiVum-R2RYWdy-tyhcs0E2sBG2x1VPRhtyxua7sgYlrK8qSla4CNE-RhPfuQ-ukVrnTD4N175jOHmovRBnHAhDAO5snwHbJewl-S1x5yhtfDOyru6Wp7ZtCu9Zt1L9ltNcVckv010sH35t2UB9Gor-TIMuF8UEedtOyO1lN5Q4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="text-[10px] font-label text-tertiary tracking-widest uppercase mb-2">Hazardous Environments</div>
+<h4 class="text-3xl font-headline font-bold text-white mb-2">Oil &amp; Gas</h4>
+<p class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Explosion-proof enclosures and high-pressure system controls.</p>
+</div>
+</div>
+<!-- Manufacturing -->
+<div class="relative group h-[500px] overflow-hidden rounded-xl">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Interior of a modern robotic manufacturing plant with blue ambient lighting and assembly lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpFqIfh-4PxaEjeQ6ciLZQywbOpeC_SNpT992JdHnd8h7vn6XPfhIAJwwlxfLpsY1_cQi068SPDZ_bWA06Cut0rZSxvRh3Ld9lDREIRuY28-bO5wSGwW0JgWXKwehcQbvfZvsHg-Z1k3OUZfiyymQ6_ZnZ-T5ZkPw51gSvly3uR7I7d0ow5a5cAwIDnHWYmSjI-LQ2BU5eqGOXIiGtJtOOnfIRShHb6HGy5_fepZ37XR5K7wbiTgdJ1cpfXtCiL1xZsTP65y-Ei28"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="text-[10px] font-label text-primary tracking-widest uppercase mb-2">Automated Production</div>
+<h4 class="text-3xl font-headline font-bold text-white mb-2">Manufacturing</h4>
+<p class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Custom PLC logic and high-speed motor control centers.</p>
+</div>
+</div>
+<!-- Energy -->
+<div class="relative group h-[500px] overflow-hidden rounded-xl">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Rows of solar panels and wind turbines on a clear day with a crisp clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG9rXRGxx8zsOB-4WVQSYY-cs1h2hiWHJ5quDjEM4Cw5nvMUpRwT_FUNC5CMktw--wMQCKXI8GMuMsT0Q5MJvmMUMySHGqWCqq8x83j2CgCMWb9swC3pX8mS4kx0XCiB2-BltxHgpOsRplOv_g8OsTi9y-jICKuOPMfUxsR1rbgfI4fx9qAp7ajYGU03PidHbO0PN0TzC63VQQnOq0GgTsFQ4t8rf1qET_34h3z2iRTjXuce4Xh8fATFMsGRuE-gwteaL-OvR2pog"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="text-[10px] font-label text-primary tracking-widest uppercase mb-2">Grid Infrastructure</div>
+<h4 class="text-3xl font-headline font-bold text-white mb-2">Energy</h4>
+<p class="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Smart grid synchronization and renewable energy storage panels.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest News -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-center mb-16">
+<h2 class="text-4xl font-headline font-bold">Latest Intelligence</h2>
+<a class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">
+                        View All Reports <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="flex flex-col md:flex-row gap-6 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-video overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Technician in a laboratory setting working with a complex electronic circuit board and diagnostic tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDufzs7SmlMFPsAHcGfFvW5Z0cNK-7WXqTl4y_vhncQo1HENQGu6syvAqgUk-_LDsBXPUI_mHjTB5F2Pwc5gBpZW2ZLA1eF4lUah22s-lJjcvPbh05s4NiO924DJCaGgUnzAaz2PEMeCKkDVp8HgAiIcehmC2qzezJkwE_RdTBjilsX2-rXOiG15vR2MBjDVeO1wM1vOFnXlqyMLKdM27RQUCB2oeMdovp2WHhJGj97IGWhppgcn6xoHFlLjCTXu4ZP0PXE9hmdbMA"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<span class="text-[10px] font-label text-slate-500 uppercase tracking-widest mb-2">Engineering Brief • MAR 2024</span>
+<h3 class="text-xl font-headline font-bold mb-3 group-hover:text-primary transition-colors">Advancements in Thermal Management for PLC Cabinets</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2">How new active cooling strategies are extending the lifespan of industrial electronics by 30%...</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-6 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-video overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Cybersecurity symbols and data streams overlaid on an industrial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4zYtlBfJ29XcqMZn_VmZK9Xh9DnrOU-1uALBt8F2YQ_CM7nhGQhl5dFFSy763N5ryLXC621wovlg4N7lyMAIkJ_T76Nudu3faIh9zMF9-4GIUXdTlt7K4pUmGeS-wp2LpM-T9NI4e0d0y-dgA21H0zKfsV954kZRd771tU_67P7ZxlCzmUCsAAjaq2rpLXdhrIrXpQsF7Ap4ZxXrq-86293h7Z35SlQNOSHKY1Sa7zXvBKCNKB0FDVxgpy1MNsesN8GO6RPDzKzM"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<span class="text-[10px] font-label text-slate-500 uppercase tracking-widest mb-2">Security Report • FEB 2024</span>
+<h3 class="text-xl font-headline font-bold mb-3 group-hover:text-primary transition-colors">Securing Industrial Assets in the IIoT Era</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2">A technical deep-dive into hardware-level security for distributed control networks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 relative">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="bg-surface-container rounded-3xl p-12 md:p-24 border border-outline-variant/10 text-center space-y-8 overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter">Ready for <span class="text-primary">Precision?</span></h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto">Our engineering team is ready to review your schematics and provide a comprehensive quote for your next high-impact project.</p>
+<div class="flex flex-wrap justify-center gap-6 pt-6">
+<button class="px-10 py-5 bg-primary-container text-on-primary-container font-bold rounded-md hover:scale-105 transition-transform">
+                            Start Your Project
+                        </button>
+<button class="px-10 py-5 bg-surface text-primary border border-primary/20 font-bold rounded-md hover:bg-surface-container-high transition-all">
+                            Speak to an Engineer
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from JSON -->
+<footer class="bg-[#0e0e0e] text-[#b3c5ff] font-['Inter'] text-sm antialiased w-full py-12 px-8 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-black tracking-tighter text-white">PRECISION ARCHITECT</div>
+<p class="text-slate-500 max-w-xs leading-relaxed">Defining industrial excellence through superior control system design and manufacturing since 1998.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Standards</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Certifications</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">ISO 9001</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">UL 508A Listed</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-[#ffb59d] transition-colors" href="#">Support</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs">Technical Contact</h4>
+<p class="text-slate-500">1200 Industrial Way, Suite 400<br/>Houston, TX 77002</p>
+<p class="text-[#0066ff] font-bold">tech-support@parchitect.com</p>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-slate-600">
+            © 2024 Precision Architect Industrial. All Rights Reserved.
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">✦ Why Choose Us</div>
-                <h2 class="section-title">Built <span>Different</span></h2>
-                <p class="section-subtitle">Industry-leading control panels engineered with precision, backed by expert support, and designed for maximum uptime.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Fast-time processing with sub-millisecond response times for critical industrial operations.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Military Grade</h3>
-                    <p>Built to withstand extreme conditions with IP65 ratings and comprehensive safety certifications.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Fully Custom</h3>
-                    <p>Every panel tailored to your exact specifications including leading PLC platforms.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📊</div>
-                    <h3>Smart Analytics</h3>
-                    <p>Advanced HMI systems with real-time monitoring, data logging, and predictive maintenance.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🌐</div>
-                    <h3>IoT Ready</h3>
-                    <p>Cloud connectivity and Industry 4.0 integration for next-generation automation.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Expert Support</h3>
-                    <p>Dedicated technical support from our expert engineering team, available around the clock.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">◈ Solutions</div>
-                <h2 class="section-title">Our <span>Products</span></h2>
-                <p class="section-subtitle">Comprehensive control panel solutions for every industrial application.</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Standard</span>
-                        <span class="product-emoji">⚙️</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Basic PLC Panels</h3>
-                        <p>Reliable, cost-effective automation for straightforward industrial control applications.</p>
-                        <ul class="product-features">
-                            <li>Up to 50 I/O points</li>
-                            <li>Single/multi-motor control</li>
-                            <li>NEMA 1, 3R, 4, 12 enclosures</li>
-                            <li>Manual operator interface</li>
-                            <li>Basic sensor integration</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Advanced</span>
-                        <span class="product-emoji">🖥️</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Advanced Control Systems</h3>
-                        <p>Comprehensive automation with HMI, networking, and advanced process control.</p>
-                        <ul class="product-features">
-                            <li>Touch screen HMI integration</li>
-                            <li>Ethernet/IP networking</li>
-                            <li>VFD integration &amp; control</li>
-                            <li>Data logging &amp; trending</li>
-                            <li>Remote diagnostics</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Enterprise</span>
-                        <span class="product-emoji">🏭</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Industrial Control Centers</h3>
-                        <p>Large-scale automation for plant-wide process control and coordination.</p>
-                        <ul class="product-features">
-                            <li>Modular, scalable design</li>
-                            <li>Redundant system architecture</li>
-                            <li>SCADA integration</li>
-                            <li>Advanced diagnostics</li>
-                            <li>Up to 2000+ I/O points</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Next-Gen</span>
-                        <span class="product-emoji">📡</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>IoT Smart Panels</h3>
-                        <p>Industry 4.0 ready with cloud connectivity, AI analytics, and predictive maintenance.</p>
-                        <ul class="product-features">
-                            <li>Cloud-based monitoring</li>
-                            <li>AI-powered analytics</li>
-                            <li>Mobile app integration</li>
-                            <li>Predictive maintenance</li>
-                            <li>Edge computing capable</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">⟳ Our Process</div>
-                <h2 class="section-title">How We <span>Work</span></h2>
-                <p class="section-subtitle">A proven methodology ensuring successful delivery every time.</p>
-            </div>
-            <div class="process-grid">
-                <div class="step-card fade-in">
-                    <div class="step-number">01</div>
-                    <h3>Consultation</h3>
-                    <p>We assess your automation needs, site conditions, and technical requirements in detail.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">02</div>
-                    <h3>Design &amp; Engineering</h3>
-                    <p>Our engineers create detailed schematics, panel layouts, and I/O documentation using industry-standard EPLAN software.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">03</div>
-                    <h3>Manufacturing</h3>
-                    <p>Precision assembly using premium components with strict quality control at every stage of production.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">04</div>
-                    <h3>Testing &amp; FAT</h3>
-                    <p>Comprehensive factory acceptance testing including high-pot, megger, and full functional verification.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">05</div>
-                    <h3>Installation &amp; Support</h3>
-                    <p>Professional installation, commissioning, and ongoing technical support for the life of your system.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">◉ Industries</div>
-                <h2 class="section-title">Who We <span>Serve</span></h2>
-                <p class="section-subtitle">Trusted by leading companies across diverse industrial sectors.</p>
-            </div>
-            <div class="industries-grid">
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🏭</span>
-                    <h3>Manufacturing</h3>
-                    <p>Assembly lines, CNC control, material handling</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">💧</span>
-                    <h3>Water Treatment</h3>
-                    <p>Pump control, filtration, distribution systems</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🍔</span>
-                    <h3>Food &amp; Beverage</h3>
-                    <p>Processing, bottling, temperature control</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">⚡</span>
-                    <h3>Energy &amp; Power</h3>
-                    <p>Generation, distribution, renewable energy</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">💊</span>
-                    <h3>Pharmaceutical</h3>
-                    <p>Clean room control, batch processing, validation</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🛢️</span>
-                    <h3>Oil &amp; Gas</h3>
-                    <p>Hazardous area, pipeline control, safety systems</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🏗️</span>
-                    <h3>Building Automation</h3>
-                    <p>HVAC, lighting, access control, fire safety</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🚢</span>
-                    <h3>Marine &amp; Ports</h3>
-                    <p>Crane control, cargo handling, vessel systems</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Upgrade?</h2>
-            <p>Transform your industrial operations with cutting-edge automation technology.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-secondary">Start Your Project</a>
-                <a href="tel:+919789544908" class="btn btn-primary">Call Us Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">✉ Get In Touch</div>
-                <h2 class="section-title">Let's <span>Talk</span></h2>
-                <p class="section-subtitle">Request a quote and our team will respond within 24 hours.</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-form-wrap">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label>Full Name *</label>
-                            <input type="text" name="name" placeholder="Your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Company Name *</label>
-                            <input type="text" name="company" placeholder="Your company" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email Address *</label>
-                            <input type="email" name="email" placeholder="your@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX">
-                        </div>
-                        <div class="form-group">
-                            <label>Industry</label>
-                            <select name="industry">
-                                <option value="">Select Industry</option>
-                                <option>Manufacturing</option>
-                                <option>Water Treatment</option>
-                                <option>Food &amp; Beverage</option>
-                                <option>Energy &amp; Power</option>
-                                <option>Pharmaceutical</option>
-                                <option>Oil &amp; Gas</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Project Details *</label>
-                            <textarea name="message" placeholder="Tell us about your control panel requirements..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <span class="contact-card-icon">📍</span>
-                        <h4>Visit Us</h4>
-                        <p>Flat No.44, First Floor, Lakshmi Ganapathy Nagar<br>Gangai Amman Kovil Street, Urappakkam<br>Chengalpattu - 603 202, Tamilnadu</p>
-                    </div>
-                    <div class="contact-card">
-                        <span class="contact-card-icon">📞</span>
-                        <h4>Call Us</h4>
-                        <a href="tel:+919789544908">+91 97895 44908</a>
-                        <p style="margin-top:6px;font-size:12px;">Emergency: 24/7 Available</p>
-                    </div>
-                    <div class="contact-card">
-                        <span class="contact-card-icon">✉️</span>
-                        <h4>Email Us</h4>
-                        <a href="mailto:skilltechcontrolsystems@gmail.com">skilltechcontrolsystems@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="brand-name">Skill Tech Control Systems</span>
-                    <p>Leading manufacturer of custom PLC control panels. Based in Chengalpattu, Tamilnadu. Contact: skilltechcontrolsystems@gmail.com</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="#products">Basic Panels</a></li>
-                        <li><a href="#products">Advanced Systems</a></li>
-                        <li><a href="#products">Control Centers</a></li>
-                        <li><a href="#products">IoT Panels</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#home">About Us</a></li>
-                        <li><a href="#industries">Industries</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#contact">Get Quote</a></li>
-                        <li><a href="tel:+919789544908">Call Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Skill Tech Control Systems. All rights reserved.</p>
-                <div style="display:flex;gap:20px;">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! Our team will contact you within 24 hours.');
-            this.reset();
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.feature-card, .product-card, .industry-card, .step-content').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html><section class="cta" id="cta-section">
-        <div class="container">
-            <h2>Ready to <span style="color:var(--primary)">Upgrade?</span></h2>
-            <p>Let's build the perfect control system for your industrial needs.</p>
-            <div class="cta-actions">
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                <a href="tel:+919789544908" class="btn btn-secondary">Call Us Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">✦ Why Choose Us</div>
-                <h2 class="section-title">Built <span>Different</span></h2>
-                <p class="section-subtitle">Industry-leading control panels engineered with precision, backed by expert support, and designed for maximum uptime.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Fast-time processing with sub-millisecond response times for critical industrial operations.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Military Grade</h3>
-                    <p>Built to withstand extreme conditions with IP65 ratings and comprehensive safety certifications.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Fully Custom</h3>
-                    <p>Every panel tailored to your exact specifications including leading PLC platforms.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📊</div>
-                    <h3>Smart Analytics</h3>
-                    <p>Advanced HMI systems with real-time monitoring, data logging, and predictive maintenance.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🌐</div>
-                    <h3>IoT Ready</h3>
-                    <p>Cloud connectivity and Industry 4.0 integration for next-generation automation.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Expert Support</h3>
-                    <p>Dedicated technical support from our expert engineering team, available around the clock.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">◈ Solutions</div>
-                <h2 class="section-title">Our <span>Products</span></h2>
-                <p class="section-subtitle">Comprehensive control panel solutions for every industrial application.</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Standard</span>
-                        <span class="product-emoji">⚙️</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Basic PLC Panels</h3>
-                        <p>Reliable, cost-effective automation for straightforward industrial control applications.</p>
-                        <ul class="product-features">
-                            <li>Up to 50 I/O points</li>
-                            <li>Single/multi-motor control</li>
-                            <li>NEMA 1, 3R, 4, 12 enclosures</li>
-                            <li>Manual operator interface</li>
-                            <li>Basic sensor integration</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Advanced</span>
-                        <span class="product-emoji">🖥️</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Advanced Control Systems</h3>
-                        <p>Comprehensive automation with HMI, networking, and advanced process control.</p>
-                        <ul class="product-features">
-                            <li>Touch screen HMI integration</li>
-                            <li>Ethernet/IP networking</li>
-                            <li>VFD integration &amp; control</li>
-                            <li>Data logging &amp; trending</li>
-                            <li>Remote diagnostics</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Enterprise</span>
-                        <span class="product-emoji">🏭</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>Industrial Control Centers</h3>
-                        <p>Large-scale automation for plant-wide process control and coordination.</p>
-                        <ul class="product-features">
-                            <li>Modular, scalable design</li>
-                            <li>Redundant system architecture</li>
-                            <li>SCADA integration</li>
-                            <li>Advanced diagnostics</li>
-                            <li>Up to 2000+ I/O points</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-card-header">
-                        <span class="product-tag">Next-Gen</span>
-                        <span class="product-emoji">📡</span>
-                    </div>
-                    <div class="product-card-body">
-                        <h3>IoT Smart Panels</h3>
-                        <p>Industry 4.0 ready with cloud connectivity, AI analytics, and predictive maintenance.</p>
-                        <ul class="product-features">
-                            <li>Cloud-based monitoring</li>
-                            <li>AI-powered analytics</li>
-                            <li>Mobile app integration</li>
-                            <li>Predictive maintenance</li>
-                            <li>Edge computing capable</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">⟳ Our Process</div>
-                <h2 class="section-title">How We <span>Work</span></h2>
-                <p class="section-subtitle">A proven methodology ensuring successful delivery every time.</p>
-            </div>
-            <div class="process-grid">
-                <div class="step-card fade-in">
-                    <div class="step-number">01</div>
-                    <h3>Consultation</h3>
-                    <p>We assess your automation needs, site conditions, and technical requirements in detail.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">02</div>
-                    <h3>Design &amp; Engineering</h3>
-                    <p>Our engineers create detailed schematics, panel layouts, and I/O documentation using industry-standard EPLAN software.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">03</div>
-                    <h3>Manufacturing</h3>
-                    <p>Precision assembly using premium components with strict quality control at every stage of production.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">04</div>
-                    <h3>Testing &amp; FAT</h3>
-                    <p>Comprehensive factory acceptance testing including high-pot, megger, and full functional verification.</p>
-                </div>
-                <div class="step-card fade-in">
-                    <div class="step-number">05</div>
-                    <h3>Installation &amp; Support</h3>
-                    <p>Professional installation, commissioning, and ongoing technical support for the life of your system.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-pill">◉ Industries</div>
-                <h2 class="section-title">Who We <span>Serve</span></h2>
-                <p class="section-subtitle">Trusted by leading companies across diverse industrial sectors.</p>
-            </div>
-            <div class="industries-grid">
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🏭</span>
-                    <h3>Manufacturing</h3>
-                    <p>Assembly lines, CNC control, material handling</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">💧</span>
-                    <h3>Water Treatment</h3>
-                    <p>Pump control, filtration, distribution systems</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🍔</span>
-                    <h3>Food &amp; Beverage</h3>
-                    <p>Processing, bottling, temperature control</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">⚡</span>
-                    <h3>Energy &amp; Power</h3>
-                    <p>Generation, distribution, renewable energy</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">💊</span>
-                    <h3>Pharmaceutical</h3>
-                    <p>Clean room control, batch processing, validation</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🛢️</span>
-                    <h3>Oil &amp; Gas</h3>
-                    <p>Hazardous area, pipeline control, safety systems</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🏗️</span>
-                    <h3>Building Automation</h3>
-                    <p>HVAC, lighting, access control, fire safety</p>
-                </div>
-                <div class="industry-card fade-in">
-                    <span class="industry-icon">🚢</span>
-                    <h3>Marine &amp; Ports</h3>
-                    <p>Crane control, cargo handling, vessel systems</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Upgrade?</h2>
-            <p>Transform your industrial operations with cutting-edge automation technology.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-secondary">Start Your Project</a>
-                <a href="tel:+919789544908" class="btn btn-primary">Call Us Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Talk</h2>
-                <p class="section-subtitle">Request a quote and our team will respond within 24 hours.</p>
-            </div>
-            <div class="contact-grid">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label>Full Name *</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Company Name *</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address *</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel">
-                    </div>
-                    <div class="form-group">
-                        <label>Industry</label>
-                        <select>
-                            <option>Select Industry</option>
-                            <option>Manufacturing</option>
-                            <option>Water Treatment</option>
-                            <option>Food & Beverage</option>
-                            <option>Energy & Power</option>
-                            <option>Pharmaceutical</option>
-                            <option>Oil & Gas</option>
-                            <option>Building Automation</option>
-                            <option>Automotive</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Project Details *</label>
-                        <textarea required placeholder="Tell us about your control panel requirements..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-                
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h3>Visit Us</h3>
-                        <p>Flat No.44, First Floor, Lakshmi Ganapathy Nagar<br>Gangai Amman Kovil Street, Urappakkam<br>Chengalpattu - 603 202, Tamilnadu</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📞</div>
-                        <h3>Call Us</h3>
-                        <p>Sales: +91 97895 44908<br>Support: +91 97895 44908<br>Emergency: 24/7 Available</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">✉️</div>
-                        <h3>Email Us</h3>
-                        <p>skilltechcontrolsystems@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    
-
-    <script>
-    // Nav toggle for mobile
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-            navToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
-        });
-        // Close on link click
-        navLinks.querySelectorAll('a').forEach(a => {
-            a.addEventListener('click', () => {
-                navLinks.classList.remove('open');
-                navToggle.textContent = '☰';
-            });
-        });
-    }
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-    });
-
-    // Form submission
-    const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you! Our team will contact you within 24 hours.');
-            this.reset();
-        });
-    }
-
-    // Fade-in animation on scroll
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
-    });
-</script>
-</body>
-</html>
+</footer>
+</body></html>
