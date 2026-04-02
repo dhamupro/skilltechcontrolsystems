@@ -1,0 +1,237 @@
+---
+import Base from '../layouts/Base.astro'
+---
+
+<Base title="Products" description="High-performance industrial control solutions — PLC panels, power distribution, HMI, motor control, and custom fabrication.">
+  <main class="relative pt-24 min-h-screen">
+    <div class="fixed inset-0 technical-grid pointer-events-none"></div>
+
+    <!-- Hero -->
+    <section class="px-8 py-16 max-w-screen-2xl mx-auto relative overflow-hidden">
+      <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-8">
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 bg-primary-container/20 text-primary text-[10px] font-bold tracking-[0.2em] uppercase mb-4 rounded-sm border border-primary/20">
+            Industrial Catalog 2024
+          </span>
+          <h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter leading-none text-on-surface mb-6">
+            Engineered <span class="text-primary italic">Systems</span> &amp;<br/>Control Architecture.
+          </h1>
+          <p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">
+            High-performance industrial control solutions designed for absolute reliability in mission-critical environments. From power distribution to human-machine interface.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-label uppercase tracking-widest text-outline">
+          <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> ISO 9001 Certified</span>
+          <span class="w-[1px] h-4 bg-outline-variant"></span>
+          <span>Direct Factory Support</span>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="sticky top-20 z-40 mb-12 flex flex-wrap items-center gap-2 py-4 border-y border-outline-variant/10 bg-background/50 backdrop-blur-md">
+        <button class="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-primary text-on-primary transition-all">All Systems</button>
+        <button class="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">PLC Panels</button>
+        <button class="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">Power Distribution</button>
+        <button class="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">HMI Interfaces</button>
+        <button class="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">Motor Control</button>
+        <div class="ml-auto flex items-center bg-surface-container-lowest border-b border-outline-variant/50 px-4 py-2 w-full md:w-64">
+          <span class="material-symbols-outlined text-outline text-sm">search</span>
+          <input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline/50" placeholder="Search technical specs..." type="text" />
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/10 border border-outline-variant/10 overflow-hidden">
+        <!-- PLC Panel -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">Series-X / 900</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">Advanced PLC Panel</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">memory</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="PLC Panel Interior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1HEf_br7e61yIWEjv2-wc4EffOfrqm8I8OQlI9Ije3RAvndEBOY48szNvxkzX8voymyAVfvHzGHZHD7TwyhQeNjexAst1C8evsIOB1MGaI-nQYe1Hdhc2z2zkB9YHQkFnGvY_y5wkS9DpuwWepw-nl5WCKyyvus08RJwX9FoYtvBnPDK_eLgq4WCwsnlvOrLJMokicrH2oxAjwuey-3kSQSRX2KRSSwRiXdIVZi6ygmTjlMyqXnCqVVYiIxQEP5Tdq1ejhk_HQT4" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">Precision-engineered logic controllers with modular expansion capabilities. Integrated fail-safe protocols and real-time diagnostic reporting.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>24V DC Rail</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>IP65 Rating</span>
+            </div>
+            <a href="/product-spec" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              TECHNICAL SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Power Distribution -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">VOLT-MASTER / PD</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">Power Distribution</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">bolt</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="Power Distribution Unit" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9EOCaPSy-LNyoZdek6GTFSbza5KCvC8h9quOj5CoLfXxYKWbGOOcNIR1GmZt72D41ygX_UxF6LlAz2mBg3tz1vabFEuVxTHJDAqde74BNqeXTJYtP2slxAlCNR9vuVhjCUXsSNAm0qhZ0OWQrzOX2YOXh63Kb0eOS6tyTBOgoG64uEwjIsWIqSjoFmKG_9mcLaEcsj0F1wlm-xUC4uC8dKsbWRyvijwSw0TR-hTHqeCrfs5_w0lKNsuntLAX2Bu_a2imkEpVGFAI" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">High-amperage load balancing systems featuring arc-flash mitigation and digital surge protection. Optimized for industrial-scale energy routing.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>Up to 4000A</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>Type-Tested</span>
+            </div>
+            <a href="/product-spec" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              TECHNICAL SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- HMI -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">INTERFACE-01</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">Integrated HMI</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">touch_app</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="HMI Interface Screen" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQihdvlizvnd_tHks8CJ3sD6s-x-agf5c1b1ccrKH1ygENzxF4weqT08fGp7Du3POPt0CbcHT7boOsA5DoF1sJzfcfB4d_L9lVoQ2J6GSp4p9D7sjzW1nXmscukNl7ki6Cn5w3rZfgrsqlRd3XLfHCR0fCcLFS1hxtOSk-sPIfGpLVecaRyVsYpbvhLBnJpRrpDFF75ijqrPk5Kyw3NIJJjbdT6N-HXTLPJvFlK6zB1dUdX--qQVQiXuHegRHuLRL6I3VGoDLvnho" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">Intuitive multi-touch operator interfaces with custom UI development. Seamless integration with existing SCADA and ERP networks.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>Multi-Touch</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>Cloud Ready</span>
+            </div>
+            <a href="/product-spec" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              TECHNICAL SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MCC -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">DRIVE-PRO / 300</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">MCC Solutions</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">settings_input_component</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="Motor Control Center" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKb0qbhVG6-nWTt677V54DRvyPJt65r95czXx49k-1tAj5Wukw97mnm8ppxZRP_kyx3WTTenbA-V9GFOkDwF5ko7Qd3rjsBMX8cp1oxXQox3HG-LvMrO30Eu5PnxSRHFf-64W7HT0RXnFA-LZiXvIUz3ebQmgXBrEf890T6s1ZORvmWCHdRU0GA2QITLuXY4-gzqBOH8F_oGpwU2USyBiXBpEci4dL7oAYtafNH9w-OcS3vxRWoz-_Mu8TfsEVFWJ1BnQmjWEvec" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">Motor Control Centers featuring VFD integration and intelligent overload protection. Designed for precision torque and speed management.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>VFD Sync</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>Ethernet/IP</span>
+            </div>
+            <a href="/product-spec" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              TECHNICAL SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneumatic -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">AIR-LOGIC / PX</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">Pneumatic Control</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">air</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="Pneumatic Control Panel" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxmp4pINay9hXqBSb6gkowYTqmJDw15juLmfTfwT7bd0UYJlwYpTKODSOLOkcxqGxcKDWcES_yzgiWa5emqruImKn7ViQxq12O6FGd_SKEjJNWobDx4RyXNV3rSAricu6NskWKm91LdJZEEFoZ2l1kJGp14Esi2y01JNk3WYakEKpsDNVQTlJqCZv4umsC8Ew5L3jQxUhL0e2VICCAPfjptQpMTQkLQxcF49A_pTHdVwZCyXftUgOw8y1hEV4GbmvBqNN8U8VXO5w" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">Hybrid electro-pneumatic assemblies for specialized automation. High-flow valve manifolds with stainless steel manifold options.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>10 Bar Max</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>Explosion-Proof</span>
+            </div>
+            <a href="/product-spec" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              TECHNICAL SPECIFICATIONS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Custom Fabrication -->
+        <div class="group bg-surface flex flex-col p-8 transition-all hover:bg-surface-container-low relative">
+          <div class="flex justify-between items-start mb-8">
+            <div>
+              <span class="text-[10px] font-mono text-primary/60 tracking-tighter uppercase mb-1 block">BESPOKE-BUILD</span>
+              <h3 class="text-2xl font-headline font-bold text-on-surface">Custom Fabrication</h3>
+            </div>
+            <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">architecture</span>
+          </div>
+          <div class="aspect-video mb-8 overflow-hidden bg-surface-container-high relative">
+            <img alt="Custom Panel Design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 opacity-60 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz7E6nWQQ6U2_N5zX-Lo1NfIVyjqr3IC1FbnL5WoiCH0TmvLWd7s2Z7vkBASAOkHJnwmTYOncmQEIMluI_GnyGTZQr4Je9CNSMym0sAJsKqIu2i_JAdhPJ6RT4KFOe0_8Gqs_BZvf-IAoguIr9OiKZ-d1oirKUtnPLsXAWUBrWYKv1G4JM6dQDHZbw9tdXjydNbCQk2LLU01vhIbFOo32Myfl-FSbNiSyGgKhCz9ydHiTcuKt7DrrGNLe8QN5BDejRw378TiRGlqc" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-40"></div>
+          </div>
+          <p class="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">End-to-end custom architecture from CAD design to final assembly. Tailored specifically for unique spatial or environmental constraints.</p>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-4 text-[10px] font-mono text-outline uppercase">
+              <span>Full CAD/BIM</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span>Factory-FAT</span>
+            </div>
+            <a href="/contact" class="w-full py-4 flex items-center justify-center gap-2 bg-surface-container-high text-primary font-bold text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all">
+              CONSULT ENGINEERING <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vertical Solutions -->
+    <section class="px-8 py-24 bg-surface-container-low">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Vertical <span class="text-primary">Solutions</span></h2>
+          <p class="text-on-surface-variant max-w-2xl">Specialized control environments tailored for global industrial leaders across diverse sectors.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="md:col-span-2 bg-surface p-12 border border-outline-variant/10 hover:border-primary/30 transition-all flex flex-col justify-between aspect-video md:aspect-auto">
+            <div>
+              <div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-8">
+                <span class="material-symbols-outlined text-primary">factory</span>
+              </div>
+              <h3 class="text-3xl font-headline font-bold mb-4">Manufacturing</h3>
+              <p class="text-on-surface-variant leading-relaxed">High-volume production line automation with sub-millisecond precision and predictive maintenance algorithms.</p>
+            </div>
+            <a class="text-primary text-xs font-bold tracking-[0.2em] uppercase mt-8 inline-flex items-center gap-2" href="#">View Case Study <span class="material-symbols-outlined text-sm">north_east</span></a>
+          </div>
+          <div class="bg-surface p-12 border border-outline-variant/10 hover:border-primary/30 transition-all">
+            <div class="w-12 h-12 rounded-full bg-tertiary-container/10 flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-tertiary">oil_barrel</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">Energy &amp; Gas</h3>
+            <p class="text-on-surface-variant text-sm">Explosion-proof hazardous location panels for remote monitoring.</p>
+          </div>
+          <div class="bg-surface p-12 border border-outline-variant/10 hover:border-primary/30 transition-all">
+            <div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-8">
+              <span class="material-symbols-outlined text-primary">water_drop</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold mb-4">Water Treatment</h3>
+            <p class="text-on-surface-variant text-sm">Smart pump control and chemical dosing with SCADA integration.</p>
+          </div>
+          <div class="md:col-span-4 bg-primary-container p-12 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative">
+            <div class="absolute inset-0 technical-grid opacity-20"></div>
+            <div class="relative z-10 max-w-2xl">
+              <h3 class="text-4xl font-headline font-bold text-on-primary-container mb-4">Need a specialized technical configuration?</h3>
+              <p class="text-on-primary-container/80 text-lg">Our engineering team provides direct design-to-build consultation for high-complexity architectural projects.</p>
+            </div>
+            <a href="/contact" class="relative z-10 px-8 py-4 bg-white text-primary-container font-black text-xs tracking-[0.2em] uppercase rounded-sm shadow-2xl hover:bg-on-primary-container hover:text-primary transition-all active:scale-95">
+              REQUEST CONFIGURATOR
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
