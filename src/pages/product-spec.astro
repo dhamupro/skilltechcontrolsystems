@@ -1,0 +1,149 @@
+---
+import Base from '../layouts/Base.astro'
+---
+
+<Base title="Technical Specs" description="Detailed technical specifications for the Industrial Control Panel Model PA-X1000.">
+  <main class="pt-24 pb-20 relative">
+    <div class="absolute inset-0 technical-grid pointer-events-none"></div>
+    <section class="max-w-screen-2xl mx-auto px-8">
+
+      <!-- Title -->
+      <div class="mb-12">
+        <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 block">Series X-1000 / Control Systems</span>
+        <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface max-w-4xl">
+          Industrial Control Panel <br/>
+          <span class="text-primary-container">Model PA-X1000</span>
+        </h1>
+      </div>
+
+      <!-- Hero + Fast Specs -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
+        <div class="lg:col-span-8 relative aspect-video bg-surface-container-low rounded-xl overflow-hidden group">
+          <img class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmXw7nHhDgXqJaTatGjZQseIeT4cld8QvJZYFJOnimMIFZFzd0-DiKQFQI8xiljbCvvdAU_uMMvsr9TnqXRl7x-sJ1PAP2_Sev2SBpPNpowsOlFPMLYT6nvSpTbTek0_kfybNYtnE_vSfrk2zTsabKZZUgTXNLOzNOxdGpx1b-MkeIZHAx9fTn-le4avolSZoXgYQbmyepJvPGDEZyi8MhdrLmGyC4u2uJWh940qMYz3xiuo9qYNfaXkfo_XzZ8c83s_e_eNNs6YM" alt="Industrial Control Panel Model PA-X1000" />
+          <div class="absolute top-8 left-8 flex flex-col gap-4">
+            <div class="bg-surface-container-highest/80 backdrop-blur-md p-3 rounded-lg border border-outline-variant/20">
+              <p class="font-label text-[10px] uppercase tracking-widest text-primary mb-1">Status Blueprint</p>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#b3c5ff]"></span>
+                <span class="text-xs font-mono">ACTIVE_SYSTEM_READY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col gap-8">
+          <div class="p-8 bg-surface-container rounded-xl border border-outline-variant/10">
+            <h3 class="font-headline text-xl font-bold mb-6 text-on-surface">System Overview</h3>
+            <div class="space-y-6">
+              <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                <span class="font-label text-xs text-slate-400 uppercase tracking-wider">Form Factor</span>
+                <span class="font-headline font-medium text-on-surface">Modular Floor Mount</span>
+              </div>
+              <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                <span class="font-label text-xs text-slate-400 uppercase tracking-wider">Input Voltage</span>
+                <span class="font-headline font-medium text-on-surface">480V 3-Phase</span>
+              </div>
+              <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                <span class="font-label text-xs text-slate-400 uppercase tracking-wider">Response Time</span>
+                <span class="font-headline font-medium text-on-surface">&lt; 15ms</span>
+              </div>
+              <div class="flex justify-between items-end border-b border-outline-variant/20 pb-2">
+                <span class="font-label text-xs text-slate-400 uppercase tracking-wider">Revision</span>
+                <span class="font-headline font-medium text-on-surface">V4.02.24</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <a href="/contact" class="w-full bg-primary-container hover:bg-primary-container/90 text-on-primary-container py-4 rounded-lg font-headline font-bold flex items-center justify-center gap-3 transition-all active:scale-95">
+              <span class="material-symbols-outlined">request_quote</span>
+              Request Quote for this Model
+            </a>
+            <button class="w-full bg-surface-container-high hover:bg-surface-container-highest text-primary py-4 rounded-lg font-headline font-medium flex items-center justify-center gap-3 transition-all active:scale-95">
+              <span class="material-symbols-outlined">download</span>
+              Download Datasheet (PDF)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specs Tables -->
+      <div class="space-y-24">
+        <!-- Electrical -->
+        <div>
+          <div class="flex items-baseline gap-4 mb-8">
+            <h2 class="font-headline text-3xl font-bold tracking-tight">Electrical Characteristics</h2>
+            <div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 border border-outline-variant/20 rounded-xl overflow-hidden">
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Nominal Input Voltage</span><span class="font-body font-medium">480 VAC, 50/60 Hz</span></div>
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Control Circuit Voltage</span><span class="font-body font-medium">24 VDC</span></div>
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">SCCR Rating</span><span class="font-body font-medium">65 kA @ 480V</span></div>
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Current Rating</span><span class="font-body font-medium">100A (Standard Configuration)</span></div>
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Power Factor</span><span class="font-body font-medium">0.96 (at full load)</span></div>
+            <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">I/O Capacity</span><span class="font-body font-medium">32 Digital In / 16 Relay Out</span></div>
+          </div>
+        </div>
+
+        <!-- Mechanical & Enclosure -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <div class="flex items-baseline gap-4 mb-8">
+              <h2 class="font-headline text-3xl font-bold tracking-tight">Mechanical Dimensions</h2>
+              <div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+            </div>
+            <div class="space-y-4">
+              <div class="p-6 bg-surface-container-low border-l-4 border-primary rounded-r-xl">
+                <div class="grid grid-cols-3 gap-8">
+                  <div><p class="font-label text-[10px] text-slate-400 uppercase mb-1">Height</p><p class="font-headline text-xl font-bold">1800 mm</p></div>
+                  <div><p class="font-label text-[10px] text-slate-400 uppercase mb-1">Width</p><p class="font-headline text-xl font-bold">800 mm</p></div>
+                  <div><p class="font-label text-[10px] text-slate-400 uppercase mb-1">Depth</p><p class="font-headline text-xl font-bold">500 mm</p></div>
+                </div>
+              </div>
+              <div class="p-6 bg-surface-container-low border-l-4 border-outline-variant rounded-r-xl">
+                <p class="font-label text-[10px] text-slate-400 uppercase mb-1">Total Unit Weight</p>
+                <p class="font-headline text-xl font-bold">145 kg (Empty) / 210 kg (Max Load)</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-4 mb-8">
+              <h2 class="font-headline text-3xl font-bold tracking-tight">Enclosure &amp; Protection</h2>
+              <div class="h-px flex-grow bg-gradient-to-r from-outline-variant/40 to-transparent"></div>
+            </div>
+            <div class="grid grid-cols-1 gap-px bg-outline-variant/20 border border-outline-variant/20 rounded-xl overflow-hidden">
+              <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Material</span><span class="font-body font-medium">14-Gauge Cold Rolled Steel</span></div>
+              <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Rating</span><span class="font-body font-medium">NEMA 4X / IP66</span></div>
+              <div class="bg-surface-container-low p-6 flex justify-between"><span class="font-label text-sm text-slate-400">Temperature Range</span><span class="font-body font-medium">-20°C to +55°C</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="bg-surface-container-low p-12 rounded-2xl border border-outline-variant/10 relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-8 opacity-10">
+            <span class="material-symbols-outlined text-9xl">verified</span>
+          </div>
+          <div class="relative z-10">
+            <h2 class="font-headline text-3xl font-bold mb-12">Compliance &amp; Global Standards</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+              {[
+                { code: 'UL', label: 'UL 508A Certified' },
+                { code: 'CE', label: 'EN 61439-1 Compliance' },
+                { code: 'ISO', label: '9001:2015 Manufacturing' },
+                { code: 'ROHS', label: 'Lead-Free Assembly' },
+                { code: 'CSA', label: 'C22.2 No. 14' },
+              ].map(({ code, label }) => (
+                <div class="text-center group">
+                  <div class="w-16 h-16 mx-auto mb-4 bg-surface-container-high rounded-full flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+                    <span class="font-bold font-headline text-sm">{code}</span>
+                  </div>
+                  <p class="text-xs font-label text-slate-400">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
